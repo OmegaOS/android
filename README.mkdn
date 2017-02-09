@@ -37,7 +37,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 - Initializing an empty repo
 - Syncing the repo
 
-Alright, so now we’re getting there. I have outlined the basics of what we’re about to do and broke them down as I know them. This is all pretty much going to be copy/paste so it’ll be fairly difficult to screw this up :)
+Alright, so now we’re getting there. I have outlined the basics of what we are about to do and broke them down as I know them. This is all pretty much going to be copy/paste so it will be fairly difficult to screw this up :)
 
 ##### Make directory for the repo binary
 
@@ -70,7 +70,7 @@ To initialize your local repository using the OmegaOS trees, use a command like 
 
       $  repo sync --no-clone-bundle --no-tags -c -f -j8
 
-###Building the OmegaOS
+### Building the OmegaOS
 - Preparing Required Binaries and Device Drivers
 - Setting Up CCache (Optional)
 - Building OmegaOS
@@ -102,7 +102,7 @@ To get the zip file that has been built, navigate to the following directory and
 
       $ cd ~/Omega/out/target/product/<devicename>/
 
-If you found it, then congratulations! If you didn't, try retrying the build process but before doing so, ensure you do the following to make $
+If you found it, then congratulations you have successfully compiled OmegaOS! If you didn't, try retrying the build process but before doing so, ensure you do the following to make $
 
       $ cd ~/Omega
       $ make clean
@@ -112,4 +112,4 @@ After doing so, redo everything stated from the Building Section.
 
 ##### For those who successfully built OmegaOS
 
-Well, Congratulations on your victory! Now, you have a .zip file that is flashable to your device! Share it to the internet as you wish but be sure to contribute back and also give credits to the OmegaOS and its contributors!Also keep in mind that if an official build exists for a device, no unofficial builds should be released publicly. Do come and build OmegaOS another time as source code is routinely being improved upon. If you wish to contibute, feel free to make a pull request to the OmegaOS Team! See you again builder!Note:If you decide to create a thread on xda, please limit the thread to only one per device.more than one thread will not be allowed per device as it creates confusion amongst users and makes it hard for us to track bug reports.If you have unofficial builds, post them up on g+ so users can use and report issues in the post itself.
+Well, Congratulations on your victory! Now, you have a .zip file that is flashable to your device! Share it to the internet as you wish but be sure to contribute back and also give credits to the OmegaOS and its contributors! Also keep in mind that if an official build exists for a device, no unofficial builds should be released publicly. Do come and build OmegaOS another time as source code is routinely being improved upon. If you wish to contribute, feel free to make a pull request to the OmegaOS Team! See you again builder! Note:If you decide to create a thread on xda, please limit the thread to only one per device. More than one thread will not be allowed per device as it creates confusion amongst users and makes it hard for us to track bug reports. If you have unofficial builds, post them up on g+ so users can use and report issues in the post itself.
