@@ -14,10 +14,6 @@
   <remote  name="omega"
            fetch="https://github.com/omegaos"
            revision="refs/heads/n7.1" />
-	
-  <remote  name="aosp-caf"
-           fetch="https://github.com/AOSP-CAF"
-           revision="refs/heads/n-mr1" />
 
 <!-- BEGIN OMEGA OS -->
   <project name="platform_manifest" path="manifest" remote="omega" />
@@ -52,65 +48,21 @@
   <project name="platform_vendor_qcom_opensource_fm" path="vendor/qcom/opensource/fm" remote="omega" />
 <!-- END  OMEGA OS -->
 
-<!-- BEGIN AOSP-CAF -->
-  <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
-  <project name="platform_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
-  <project name="platform_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="aosp-caf" />
-  <project name="platform_external_bash" path="external/bash" remote="aosp-caf" />
-  <project name="platform_external_busybox" path="external/busybox" remote="aosp-caf" />
-  <project name="platform_external_connectivity" path="external/connectivity" remote="aosp-caf" />
-  <project name="platform_external_e2fsprogs" path="external/e2fsprogs" remote="aosp-caf" />
-  <project name="platform_external_exfat" path="external/exfat" remote="aosp-caf" />
-  <project name="platform_external_f2fs-tools" path="external/f2fs-tools" remote="aosp-caf" />
-  <project name="platform_external_fsck_msdos" path="external/fsck_msdos" remote="aosp-caf" />
-  <project name="platform_external_fuse" path="external/fuse" remote="aosp-caf" />
-  <project name="platform_external_mksh" path="external/mksh" remote="aosp-caf" />
-  <project name="platform_external_ntfs-3g" path="external/ntfs-3g" remote="aosp-caf" />
-  <project name="platform_external_tinyalsa" path="external/tinyalsa" remote="aosp-caf" />
-  <project name="platform_external_tinycompress" path="external/tinycompress" remote="aosp-caf" />
-  <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="aosp-caf" />
-  <project name="platform_external_zlib" path="external/zlib" remote="aosp-caf" />
-  <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt" remote="aosp-caf" />
-  <project name="platform_hardware_qcom_bt" path="hardware/qcom/bt-caf" revision="n-mr1-caf" remote="aosp-caf" />
-  <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan" remote="aosp-caf" />
-  <project name="platform_hardware_qcom_wlan" path="hardware/qcom/wlan-caf" revision="n-mr1-caf" remote="aosp-caf" />
-  <project name="platform_hardware_ril" path="hardware/ril" remote="aosp-caf" />
-  <project name="platform_hardware_ril" path="hardware/ril-caf" revision="n-mr1-caf" remote="aosp-caf" />
-  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="aosp-caf" />
-  <project name="platform_system_qcom" path="system/qcom" remote="aosp-caf" />
-  <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
-  <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="aosp-caf" />
-<!-- END AOSP-CAF -->
-
-<!-- BEGIN LINEAGE-OS -->
-  <project name="android_external_libncurses" path="external/libncurses" remote="laos" />
-  <project name="android_hardware_qcom_audio" path="hardware/qcom/audio/default" remote="laos" />
-  <project name="android_hardware_qcom_camera" path="hardware/qcom/camera" remote="laos" />
-  <project name="android_hardware_qcom_display" path="hardware/qcom/display" remote="laos" />
-  <project name="android_hardware_qcom_gps" path="hardware/qcom/gps" remote="laos" />
-  <project name="android_hardware_qcom_media" path="hardware/qcom/media/default" remote="laos" />
-  <project path="hardware/qcom/audio-caf/msm8996" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="cm-14.1-caf-8996" />
-  <project path="hardware/qcom/audio-caf/apq8084" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="cm-14.1-caf-8084" />
-  <project path="hardware/qcom/audio-caf/msm8916" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="cm-14.1-caf-8916" />
-  <project path="hardware/qcom/audio-caf/msm8937" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="cm-14.1-caf-8937" />
-  <project path="hardware/qcom/audio-caf/msm8952" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="cm-14.1-caf-8952" />
-  <project path="hardware/qcom/audio-caf/msm8974" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="cm-14.1-caf-8974" />
-  <project path="hardware/qcom/audio-caf/msm8994" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="cm-14.1-caf-8994" />
-  <project path="hardware/qcom/display-caf/msm8996" name="LineageOS/android_hardware_qcom_display" remote="github" revision="cm-14.1-caf-8996" />
-  <project path="hardware/qcom/display-caf/apq8084" name="LineageOS/android_hardware_qcom_display" remote="github" revision="cm-14.1-caf-8084" />
-  <project path="hardware/qcom/display-caf/msm8916" name="LineageOS/android_hardware_qcom_display" remote="github" revision="cm-14.1-caf-8916" />
-  <project path="hardware/qcom/display-caf/msm8937" name="LineageOS/android_hardware_qcom_display" remote="github" revision="cm-14.1-caf-8937" />
-  <project path="hardware/qcom/display-caf/msm8952" name="LineageOS/android_hardware_qcom_display" remote="github" revision="cm-14.1-caf-8952" />
-  <project path="hardware/qcom/display-caf/msm8974" name="LineageOS/android_hardware_qcom_display" remote="github" revision="cm-14.1-caf-8974" />
-  <project path="hardware/qcom/display-caf/msm8994" name="LineageOS/android_hardware_qcom_display" remote="github" revision="cm-14.1-caf-8994" />
-  <project path="hardware/qcom/media-caf/msm8996" name="LineageOS/android_hardware_qcom_media" remote="github" revision="cm-14.1-caf-8996" />
-  <project path="hardware/qcom/media-caf/apq8084" name="LineageOS/android_hardware_qcom_media" remote="github" revision="cm-14.1-caf-8084" />
-  <project path="hardware/qcom/media-caf/msm8916" name="LineageOS/android_hardware_qcom_media" remote="github" revision="cm-14.1-caf-8916" />
-  <project path="hardware/qcom/media-caf/msm8937" name="LineageOS/android_hardware_qcom_media" remote="github" revision="cm-14.1-caf-8937" />
-  <project path="hardware/qcom/media-caf/msm8952" name="LineageOS/android_hardware_qcom_media" remote="github" revision="cm-14.1-caf-8952" />
-  <project path="hardware/qcom/media-caf/msm8974" name="LineageOS/android_hardware_qcom_media" remote="github" revision="cm-14.1-caf-8974" />
-  <project path="hardware/qcom/media-caf/msm8994" name="LineageOS/android_hardware_qcom_media" remote="github" revision="cm-14.1-caf-8994" />
-<!-- END LINEAGE-OS -->
+<!-- OMEGA ADDONS -->
+  <project name="platform_external_bash" path="external/bash" remote="omega" />
+  <project name="platform_external_busybox" path="external/busybox" remote="omega" />
+  <project name="platform_external_connectivity" path="external/connectivity" remote="omega" />
+  <project name="platform_external_e2fsprogs" path="external/e2fsprogs" remote="omega" />
+  <project name="platform_external_exfat" path="external/exfat" remote="omega" />
+  <project name="platform_external_f2fs-tools" path="external/f2fs-tools" remote="omega" />
+  <project name="platform_external_fsck_msdos" path="external/fsck_msdos" remote="omega" />
+  <project name="platform_external_mksh" path="external/mksh" remote="omega" />
+  <project name="platform_external_ntfs-3g" path="external/ntfs-3g" remote="omega" />
+  <project name="platform_external_tinyalsa" path="external/tinyalsa" remote="omega" />
+  <project name="platform_external_tinycompress" path="external/tinycompress" remote="omega" />
+  <project name="platform_external_zlib" path="external/zlib" remote="omega" />
+  <project name="platform_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="omega" />
+<!-- OMEGA ADDONS -->
 
 <!-- BEGIN CODEAURORA -->
   <project groups="pdk" name="platform/abi/cpp" path="abi/cpp" revision="android-framework.lnx.2.0.r5-rel"/>
@@ -545,4 +497,7 @@
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="core-technologies.lnx.1.0.r5-rel"/>
   <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="opensource-tools.lnx.1.0.r5-rel"/>
 <!-- END CODEAURORA -->
+
+<include name="snippets/los.xml" />
+
 </manifest>
