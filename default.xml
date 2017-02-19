@@ -9,18 +9,29 @@
   <remote  name="laos"
            fetch="https://github.com/LineageOS"
            revision="refs/heads/cm-14.1" />
+
+  <remote  name="omegaos"
+           fetch="https://github.com/OmegaOS"
+           revision="refs/heads/n7.1" />
 	
   <remote  name="aosp-caf"
            fetch="https://github.com/AOSP-CAF"
            revision="refs/heads/n-mr1" />
 
-<!-- BEGIN AOSP-CAF -->
-  <project name="platform_build" path="build" remote="aosp-caf" >
+
+<!-- OMEGA OS -->
+ <project name="platform_build" path="build" remote="omega" >
   <copyfile src="core/root.mk" dest="Makefile" />
   </project>
+  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="omega" />
+  <project name="platform_frameworks_base" path="frameworks/base" remote="omega" revision="oos-n" />
+  <project name="platform_vendor_aosp" path="vendor/aosp" remote="omega" />
+<!-- END OMEGA OS ---<
+
+
+<!-- BEGIN AOSP-CAF -->
   <project name="platform_build_kati" path="build/kati" remote="aosp-caf" groups="pdk,tradefed" />
   <project name="device_qcom_common" path="device/qcom/common" remote="aosp-caf" />
-  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
   <project name="platform_art" path="art" remote="aosp-caf" />
   <project name="platform_bionic" path="bionic" remote="aosp-caf" />
   <project name="platform_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
@@ -42,7 +53,6 @@
   <project name="platform_external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="aosp-caf" />
   <project name="platform_external_zlib" path="external/zlib" remote="aosp-caf" />
   <project name="platform_frameworks_av" path="frameworks/av" remote="aosp-caf" />
-  <project name="platform_frameworks_base" path="frameworks/base" remote="aosp-caf" />
   <project name="platform_frameworks_native" path="frameworks/native" remote="aosp-caf" />
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="aosp-caf" />
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosp-caf" />
@@ -66,7 +76,6 @@
   <project name="platform_system_sepolicy" path="system/sepolicy" remote="aosp-caf" />
   <project name="platform_system_vold" path="system/vold" remote="aosp-caf" />
   <project name="platform_system_qcom" path="system/qcom" remote="aosp-caf" />
-  <project name="platform_vendor_aosp" path="vendor/aosp" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dataservices" path="vendor/qcom/opensource/dataservices" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_dpm" path="vendor/qcom/opensource/dpm" remote="aosp-caf" />
   <project name="platform_vendor_qcom-opensource_fm" path="vendor/qcom/opensource/fm" remote="aosp-caf" />
